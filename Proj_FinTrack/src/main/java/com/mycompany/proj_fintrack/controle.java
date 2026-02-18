@@ -40,7 +40,7 @@ public class controle {
     public double calcularSaldoTotal() {
         double saldo = 0;
         for (Transacao t : transacoes) {
-            if (t.isehreceita()){
+            if (t.getEhRecei()){
                 saldo += t.getValor();
             }
             else{
